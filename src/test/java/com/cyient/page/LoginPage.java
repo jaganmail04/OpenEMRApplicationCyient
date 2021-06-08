@@ -31,7 +31,8 @@ public class LoginPage {
 		selectlanguage.selectByVisibleText(language);
 	}
 	
-	public void loginSubmit() {
+	public void loginSubmit() throws InterruptedException {
+		Thread.sleep(1000);
 		driver.findElement(loginLocator).click();
 	}
 	

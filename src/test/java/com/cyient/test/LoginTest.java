@@ -13,8 +13,8 @@ import com.cyient.utilities.DataProviderUtils;
 public class LoginTest extends WebDriverWraper{
 
 	
-	@Test(dataProvider = "validCredentialData", dataProviderClass = DataProviderUtils.class)
-	public void validCredentialTest(String username, String password,String languagetext,String expectedvalue)  {
+	@Test(dataProvider = "validData", dataProviderClass = DataProviderUtils.class)
+	public void validCredentialTest(String username, String password,String languagetext,String expectedvalue) throws InterruptedException  {
 
 		
 		LoginPage login=new LoginPage(driver);

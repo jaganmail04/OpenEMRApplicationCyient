@@ -34,7 +34,7 @@ public class LoginTest extends WebDriverWraper{
 //
 //		// System.out.println("------------");
 //		// System.out.println(actualTitle);
-		Assert.assertEquals(driver.getTitle(), "OpenEMR");
+		Assert.assertEquals(driver.getTitle(), expectedvalue);
 	}
 	
 		

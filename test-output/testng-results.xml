@@ -1,64 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-08T12:53:50 IST" name="Default suite" finished-at="2021-06-08T12:53:57 IST" duration-ms="6363">
+  <suite started-at="2021-06-09T12:25:20 IST" name="Default suite" finished-at="2021-06-09T12:27:00 IST" duration-ms="100262">
     <groups>
     </groups>
-    <test started-at="2021-06-08T12:53:50 IST" name="Default test" finished-at="2021-06-08T12:53:57 IST" duration-ms="6363">
+    <test started-at="2021-06-09T12:25:20 IST" name="Default test" finished-at="2021-06-09T12:27:00 IST" duration-ms="100262">
       <class name="com.cyient.test.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.cyient.test.LoginTest@6631f5ca]" started-at="2021-06-08T12:53:50 IST" name="setup" finished-at="2021-06-08T12:53:56 IST" duration-ms="5194" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cyient.test.LoginTest@193f604a]" started-at="2021-06-09T12:25:20 IST" name="setup" finished-at="2021-06-09T12:25:37 IST" duration-ms="17368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="AckTest()[pri:0, instance:com.cyient.test.LoginTest@6631f5ca]" started-at="2021-06-08T12:53:56 IST" name="AckTest" finished-at="2021-06-08T12:53:56 IST" duration-ms="367" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AckTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cyient.test.LoginTest@6631f5ca]" started-at="2021-06-08T12:53:56 IST" name="tearDown" finished-at="2021-06-08T12:53:57 IST" duration-ms="728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.cyient.test.LoginTest@6631f5ca]" started-at="2021-06-08T12:53:57 IST" name="validCredentialTest" finished-at="2021-06-08T12:53:57 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Method public void com.cyient.test.LoginTest.validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : validCredentialData in class com.cyient.utilities.DataProviderUtils]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Method public void com.cyient.test.LoginTest.validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : validCredentialData in class com.cyient.utilities.DataProviderUtils
-at org.testng.internal.Parameters.findDataProvider(Parameters.java:561)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:772)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.cyient.test.LoginTest@193f604a]" started-at="2021-06-09T12:25:37 IST" name="validCredentialTest" data-provider="validCredentialExcelData" finished-at="2021-06-09T12:26:12 IST" duration-ms="34224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[English (Indian)]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[OpenEMR]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validCredentialTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cyient.test.LoginTest@193f604a]" started-at="2021-06-09T12:26:12 IST" name="tearDown" finished-at="2021-06-09T12:26:12 IST" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cyient.test.LoginTest@193f604a]" started-at="2021-06-09T12:26:12 IST" name="setup" finished-at="2021-06-09T12:26:32 IST" duration-ms="20239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.cyient.test.LoginTest@193f604a]" started-at="2021-06-09T12:26:32 IST" name="validCredentialTest" data-provider="validCredentialExcelData" finished-at="2021-06-09T12:26:43 IST" duration-ms="10453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[physician]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[physician]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[English (Indian)]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[OpenEMR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCredentialTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cyient.test.LoginTest@193f604a]" started-at="2021-06-09T12:26:43 IST" name="tearDown" finished-at="2021-06-09T12:26:44 IST" duration-ms="709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cyient.test.LoginTest@193f604a]" started-at="2021-06-09T12:26:44 IST" name="setup" finished-at="2021-06-09T12:26:54 IST" duration-ms="10234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validCredentialTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.cyient.test.LoginTest@193f604a]" started-at="2021-06-09T12:26:54 IST" name="validCredentialTest" data-provider="validCredentialExcelData" finished-at="2021-06-09T12:26:59 IST" duration-ms="5268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[accountant]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[accountant]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[English (Indian)]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[OpenEMR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCredentialTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cyient.test.LoginTest@193f604a]" started-at="2021-06-09T12:26:59 IST" name="tearDown" finished-at="2021-06-09T12:27:00 IST" duration-ms="698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.cyient.test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

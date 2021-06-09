@@ -8,12 +8,14 @@ import org.testng.annotations.Test;
 import com.cyient.base.WebDriverWraper;
 import com.cyient.page.LoginPage;
 import com.cyient.utilities.DataProviderUtils;
+import com.cyient.utilities.ExcelUtils;
 
 
 public class LoginTest extends WebDriverWraper{
 
 	
-	@Test(dataProvider = "validData", dataProviderClass = DataProviderUtils.class)
+	//@Test(dataProvider = "validData", dataProviderClass = DataProviderUtils.class)
+	@Test(dataProvider = "validCredentialExcelData", dataProviderClass = DataProviderUtils.class)
 	public void validCredentialTest(String username, String password,String languagetext,String expectedvalue) throws InterruptedException  {
 
 		
